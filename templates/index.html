@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="/static/style1.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>AtbikA Loans</title>
+    <style>
+    section{
+     align-items:center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <section>
+<div>
+   <img src="/static/logo.png" height="200">
+   <h2 class="alert">Use Desktop To view. Thank you!</h2>
+</div>
+    <div class="form-box">
+        <div class="form-value">
+            <form action="/" method="post">
+                <h2>Login</h2>
+                <div class="inputbox">
+
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" name="name">
+                    <label >Username</label>
+                </div>
+                <div class="inputbox">
+                    <label for="">Password</label>
+                    <div class="aun">
+    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+                          <i class="far fa-eye" id="togglePassword"  style="color:white"></i>
+
+                      </div></div>
+                <button>LOG IN</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+    // this.classList.addEventListener
+});
+</script>
+</body>
+</html>
+<!--<i class="fa-solid  fa-spin"></i>-->

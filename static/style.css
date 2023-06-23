@@ -1,0 +1,13 @@
+body{
+font-size:20px;
+}
+img{
+transition:transform .5s;
+}
+.img1:hover  img{
+    transform:scale(2);
+}
+.img1:hover #hide{
+    display:none;
+}
+
